@@ -68,7 +68,8 @@
          				audio: true
       				},
       				function(localMediaStream) {
-         				video.src = window.URL.createObjectURL(localMediaStream);
+         				//video.src = window.URL.createObjectURL(localMediaStream);
+					video.srcObject = stream;
          				video.play();
       					draw();
          				streaming = true;
