@@ -69,7 +69,7 @@
       				},
       				function(localMediaStream) {
          				//video.src = window.URL.createObjectURL(localMediaStream);
-					video.srcObject = stream;
+					video.srcObject = localMediaStream;
          				video.play();
       					draw();
          				streaming = true;
